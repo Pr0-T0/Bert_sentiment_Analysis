@@ -34,7 +34,7 @@ This project is a simple Sentiment Analysis Web Application that uses a FastAPI 
 
 4. Run the FastAPI server:
    ```sh
-   uvicorn main:app --host 0.0.0.0 --port 8000
+   uvicorn app:app --host 0.0.0.0 --port 8000
    ```
 
 5. The API will be accessible at `http://localhost:8000`.
@@ -64,7 +64,7 @@ This project is a simple Sentiment Analysis Web Application that uses a FastAPI 
 ```
 /
 ├── backend/
-│   ├── main.py  # FastAPI server
+│   ├── app.py  # FastAPI server
 ├── frontend/
 │   ├── index.html  # Frontend UI
 │   ├── styles.css  # Styling
