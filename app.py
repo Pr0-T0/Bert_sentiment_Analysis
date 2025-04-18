@@ -1,10 +1,13 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="frontend", html=True), name="static");
 
 app.add_middleware(
     CORSMiddleware,
