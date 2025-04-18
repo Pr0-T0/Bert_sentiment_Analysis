@@ -40,9 +40,7 @@ This project is a simple Sentiment Analysis Web Application that uses a FastAPI 
 5. The API will be accessible at `http://localhost:8000`.
 
 ### Frontend Setup
-1. Open the `index.html` file in a web browser.
-2. Enter text into the input field and submit it to analyze sentiment.
-3. Watch the interactive character change its expression based on the sentiment result.
+1.The frontend will be available at `http://localhost:8000/static`.
 
 ## API Endpoints
 - **POST `/sentiment`**: Accepts a JSON object with a `text` field and returns the sentiment analysis result.
